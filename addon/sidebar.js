@@ -161,7 +161,12 @@ async function init() {
 
   displayHome(false);
 
-  await browser.tabsplit.init();
+  console.log(
+    'tabsplit.init sez:',
+    await browser.tabsplit.init());
+  console.log(
+    'tabsplit_child.init_child sez:',
+    await browser.tabsplit_child.init_child());
 }
 
 init();

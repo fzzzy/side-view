@@ -19,6 +19,14 @@
           "script": "../experiment/api.js",
           "paths": [["tabsplit"]]
         }
+      },
+      "tabsplit_child": {
+        "schema": "../child/schema.json",
+        "child": {
+          "scopes": ["addon_child"],
+          "script": "../child/child.js",
+          "paths": [["tabsplit_child"]]
+        }
       }
     },
     "background": {
